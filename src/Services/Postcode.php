@@ -161,7 +161,7 @@ class Postcode
                 continue;
             }
 
-            if ($this->loadAllPostcodes === true && $this->checkThisFileWasProcessed($filePath)) {
+            if ($this->loadAllPostcodes === false && $this->checkThisFileWasProcessed($filePath)) {
                 continue;
             }
 
