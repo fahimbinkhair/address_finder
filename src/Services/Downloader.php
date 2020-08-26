@@ -16,7 +16,7 @@ namespace App\Services;
  *
  * @package App\Services
  */
-class Downloader
+class Downloader extends ServiceBase
 {
     /** @var string $fileToDownload */
     private $fileToDownload;

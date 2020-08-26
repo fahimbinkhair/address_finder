@@ -24,17 +24,17 @@ class PostcodeInfo
     use ID, DateCreated, DateUpdated;
 
     /**
-     * @ORM\Column(type="string", length=45)
+     * @ORM\Column(name="postcode", type="string", length=45, unique=true)
      */
     private $postcode;
 
     /**
-     * @ORM\Column(type="decimal", precision=10, scale=8)
+     * @ORM\Column(name="latitude", type="decimal", precision=10, scale=8)
      */
     private $latitude;
 
     /**
-     * @ORM\Column(type="decimal", precision=11, scale=8)
+     * @ORM\Column(name="longitude", type="decimal", precision=11, scale=8)
      */
     private $longitude;
 

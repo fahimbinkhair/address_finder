@@ -11,6 +11,8 @@ declare(strict_types=1);
 
 namespace App\Entity\EntityTrait;
 
+use Doctrine\ORM\Mapping as ORM;
+
 /**
  * Trait ID
  *

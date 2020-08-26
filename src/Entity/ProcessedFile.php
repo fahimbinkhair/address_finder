@@ -17,19 +17,24 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Entity(repositoryClass=ProcessedFileRepository::class)
  * @ORM\HasLifecycleCallbacks()
- * @ORM\Table(name="processed_file")
+ * @ORM\Table(
+ *     name="processed_file",
+ *     uniqueConstraints={
+ *          @ORM\UniqueConstraint(name="unique_file_name_and_checksum", columns={"file_name", "md5_checksum"})
+ *     }
+ * )
  */
 class ProcessedFile
 {
     use ID, DateCreated, DateUpdated;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(name="file_name", type="string", length=255)
      */
     private $fileName;
 
     /**
-     * @ORM\Column(type="string", length=45)
+     * @ORM\Column(name="md5_checksum", type="string", length=45)
      */
     private $md5Checksum;
 

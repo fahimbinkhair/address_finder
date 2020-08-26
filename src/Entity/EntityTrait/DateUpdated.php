@@ -11,6 +11,8 @@ declare(strict_types=1);
 
 namespace App\Entity\EntityTrait;
 
+use Doctrine\ORM\Mapping as ORM;
+
 /**
  * Trait DateUpdated
  *
@@ -32,10 +34,10 @@ trait DateUpdated
     }
 
     /**
-     * @ORM\PreUpdate()
+     * @param \DateTimeInterface $dateUpdated
      * @return self
      */
-    public function setDateUpdated(): self
+    public function setDateUpdated(\DateTimeInterface $dateUpdated): self
     {
         $this->dateUpdated = new \DateTime();
 
