@@ -297,8 +297,7 @@ class Postcode extends ServiceBase
         }
 
         $processedFile = new ProcessedFile();
-        $processedFile->setFileName($fileName)
-            ->setMd5Checksum($fileChecksum);
+        $processedFile->setFileName($fileName)->setMd5Checksum($fileChecksum);
         $this->em->persist($processedFile);
         $this->em->flush();
     }
