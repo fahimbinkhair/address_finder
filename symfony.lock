@@ -147,6 +147,9 @@
             "tests/bootstrap.php"
         ]
     },
+    "symfony/process": {
+        "version": "v4.4.11"
+    },
     "symfony/property-access": {
         "version": "v4.4.11"
     },
@@ -176,6 +179,15 @@
     },
     "symfony/stopwatch": {
         "version": "v4.4.11"
+    },
+    "symfony/web-server-bundle": {
+        "version": "3.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.3",
+            "ref": "dae9b39fd6717970be7601101ce5aa960bf53d9a"
+        }
     },
     "zendframework/zend-code": {
         "version": "3.4.1"
