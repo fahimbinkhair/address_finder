@@ -114,7 +114,13 @@
             "public/.htaccess"
         ]
     },
+    "symfony/browser-kit": {
+        "version": "v4.4.11"
+    },
     "symfony/doctrine-bridge": {
+        "version": "v4.4.11"
+    },
+    "symfony/dom-crawler": {
         "version": "v4.4.11"
     },
     "symfony/inflector": {
